@@ -1,7 +1,7 @@
 <template>
     <div class="food-list" ref='foodList'> 
         <div>
-        <div class="hot">
+        <div class="hot" ref="hot">
             <button @click="handleClickTo">跳转</button>
             <h3>热销</h3>
             <ul>
@@ -15,7 +15,7 @@
                 <li>8</li>
             </ul>
         </div>
-        <div class="discount">
+        <div class="discount" ref="discount">
             <h3>折扣</h3>
             <ul>
                 <li>1</li>
@@ -54,7 +54,7 @@ export default {
       })
     },methods:{
     handleClickTo(){
-        this.scrolltoelement(this.$refs.new,500)
+        this.scroll.scrollToElement(this.$refs.new,500)
     }
     }
 }
