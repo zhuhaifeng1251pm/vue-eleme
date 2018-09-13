@@ -12,6 +12,8 @@ export default {
   components: {
     Header,
     Main
+  },mounted(){
+    this.$store.dispatch('getGoods')
   }
 };
 </script>

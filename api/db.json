@@ -1,0 +1,156 @@
+{
+    "goods": [
+      {
+        "name": "热销榜",
+        "id":"1",
+        "foods": [
+          {
+            "name": "皮蛋瘦肉粥",
+            "price": 10,
+            "id":"11",
+            "oldPrice": "",
+            "description": "咸粥",
+            "sellCount": 229,
+            "rating": 100,
+            "info": "一碗皮蛋瘦肉粥，总是我到粥店时的不二之选。香浓软滑，饱腹暖心，皮蛋的Q弹与瘦肉的滑嫩伴着粥香溢于满口，让人喝这样的一碗粥也觉得心满意足",
+           
+            "icon": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/114/h/114",
+            "image": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/750/h/750"
+          },{
+            "name": "皮蛋瘦肉粥",
+            "price": 10,
+            "id":"12",
+            "oldPrice": "",
+            "description": "咸粥",
+            "sellCount": 229,
+            "rating": 100,
+            "info": "一碗皮蛋瘦肉粥，总是我到粥店时的不二之选。香浓软滑，饱腹暖心，皮蛋的Q弹与瘦肉的滑嫩伴着粥香溢于满口，让人喝这样的一碗粥也觉得心满意足",
+           
+            "icon": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/114/h/114",
+            "image": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/750/h/750"
+          },{
+            "name": "皮蛋瘦肉粥",
+            "price": 10,
+            "id":"13",
+            "oldPrice": "",
+            "description": "咸粥",
+            "sellCount": 229,
+            "rating": 100,
+            "info": "一碗皮蛋瘦肉粥，总是我到粥店时的不二之选。香浓软滑，饱腹暖心，皮蛋的Q弹与瘦肉的滑嫩伴着粥香溢于满口，让人喝这样的一碗粥也觉得心满意足",
+           
+            "icon": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/114/h/114",
+            "image": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/750/h/750"
+          }
+        ]
+      },
+      {
+        "name": "折扣款",
+        "id":"2",
+        "foods": [
+          {
+            "name": "皮蛋瘦肉粥",
+            "price": 10,
+            "id":"21",
+            "oldPrice": "",
+            "description": "咸粥",
+            "sellCount": 229,
+            "rating": 100,
+            "info": "一碗皮蛋瘦肉粥，总是我到粥店时的不二之选。香浓软滑，饱腹暖心，皮蛋的Q弹与瘦肉的滑嫩伴着粥香溢于满口，让人喝这样的一碗粥也觉得心满意足",
+           
+            "icon": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/114/h/114",
+            "image": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/750/h/750"
+          },{
+            "name": "皮蛋瘦肉粥",
+            "price": 10,
+            "id":"22",
+            "oldPrice": "",
+            "description": "咸粥",
+            "sellCount": 229,
+            "rating": 100,
+            "info": "一碗皮蛋瘦肉粥，总是我到粥店时的不二之选。香浓软滑，饱腹暖心，皮蛋的Q弹与瘦肉的滑嫩伴着粥香溢于满口，让人喝这样的一碗粥也觉得心满意足",
+           
+            "icon": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/114/h/114",
+            "image": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/750/h/750"
+          },{
+            "name": "皮蛋瘦肉粥",
+            "price": 10,
+            "id":"23",
+            "oldPrice": "",
+            "description": "咸粥",
+            "sellCount": 229,
+            "rating": 100,
+            "info": "一碗皮蛋瘦肉粥，总是我到粥店时的不二之选。香浓软滑，饱腹暖心，皮蛋的Q弹与瘦肉的滑嫩伴着粥香溢于满口，让人喝这样的一碗粥也觉得心满意足",
+           
+            "icon": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/114/h/114",
+            "image": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/750/h/750"
+          }
+        ]
+      },
+      {
+        "name": "新品区",
+        "id":"3",
+        "foods": [
+          {
+            "name": "皮蛋瘦肉粥",
+            "price": 10,
+            "id":"31",
+            "oldPrice": "",
+            "description": "咸粥",
+            "sellCount": 229,
+            "rating": 100,
+            "info": "一碗皮蛋瘦肉粥，总是我到粥店时的不二之选。香浓软滑，饱腹暖心，皮蛋的Q弹与瘦肉的滑嫩伴着粥香溢于满口，让人喝这样的一碗粥也觉得心满意足",
+           
+            "icon": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/114/h/114",
+            "image": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/750/h/750"
+          },{
+            "name": "皮蛋瘦肉粥",
+            "price": 10,
+            "id":"32",
+            "oldPrice": "",
+            "description": "咸粥",
+            "sellCount": 229,
+            "rating": 100,
+            "info": "一碗皮蛋瘦肉粥，总是我到粥店时的不二之选。香浓软滑，饱腹暖心，皮蛋的Q弹与瘦肉的滑嫩伴着粥香溢于满口，让人喝这样的一碗粥也觉得心满意足",
+           
+            "icon": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/114/h/114",
+            "image": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/750/h/750"
+          },{
+            "name": "皮蛋瘦肉粥",
+            "price": 10,
+            "id":"33",
+            "oldPrice": "",
+            "description": "咸粥",
+            "sellCount": 229,
+            "rating": 100,
+            "info": "一碗皮蛋瘦肉粥，总是我到粥店时的不二之选。香浓软滑，饱腹暖心，皮蛋的Q弹与瘦肉的滑嫩伴着粥香溢于满口，让人喝这样的一碗粥也觉得心满意足",
+           
+            "icon": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/114/h/114",
+            "image": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/750/h/750"
+          }
+        ]
+      }
+    ],
+    "ratings": [
+        {
+          "username": "3******c",
+          "rateTime": 1469281964000,
+          "rateType": 0,
+          "text": "很喜欢的粥",
+          "avatar": "http://static.galileo.xiaojukeji.com/static/tms/default_header.png"
+        },
+        {
+          "username": "2******3",
+          "rateTime": 1469271264000,
+          "rateType": 0,
+          "text": "",
+          "avatar": "http://static.galileo.xiaojukeji.com/static/tms/default_header.png"
+        },
+        {
+          "username": "3******b",
+          "rateTime": 1469261964000,
+          "rateType": 1,
+          "text": "",
+          "avatar": "http://static.galileo.xiaojukeji.com/static/tms/default_header.png"
+        }
+      ]
+  }
