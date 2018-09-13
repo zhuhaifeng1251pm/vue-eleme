@@ -20,7 +20,7 @@ export default {
         handleClick(str,num){
             // console.log(this.$refs.foodList)
             this.activeTabType=num
-            this.$refs.foodList.scroll.scrollToElement(this.$refs.foodList.$refs[str][0],1000);
+            this.$refs.foodList.scroll.scrollToElement(this.$refs.foodList.$refs[str][0],700);
             
         },
         handleChangeNum(num){
@@ -36,6 +36,8 @@ export default {
 .order{
     display: flex;
     height: 100%;
+        // height: 100vw;
+
     width: 100%;
 
 }

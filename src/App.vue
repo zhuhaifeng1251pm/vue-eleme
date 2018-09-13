@@ -2,16 +2,20 @@
   <div class="wrap">
     <Header/>
     <Main/>
+    <Footer/>
   </div>
 </template>
 <script>
 import Header from "./components/Header";
 import Main from "./components/Main";
+import Footer from "./components/Footer";
+
 export default {
   name: "app",
   components: {
     Header,
-    Main
+    Main,
+    Footer
   },mounted(){
     this.$store.dispatch('getGoods')
   }
@@ -28,6 +32,7 @@ export default {
   right: 0;
   display: flex;
   flex-direction: column;
+      overflow: auto;
   // justify-content: space-between;
 }
 </style>

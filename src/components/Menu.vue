@@ -34,7 +34,7 @@ export default {
 
 <style lang="scss" scoped>
 .menu {
-  width: 30vw;
+  width: 22vw;
   padding: 3vw;
 
   ul {
@@ -45,13 +45,13 @@ export default {
     align-items: center;
     margin: 0;
     padding: 0;
-    background-color: #1992ff;
+    background-color: #f8f8f8;
     li {
       width: 100%;
       line-height: 20vw;
       text-align: center;
       font-size: 5vw;
-      color: #fff;
+      color: #666;
     }
   }
   .active {
