@@ -5,7 +5,7 @@
         "id":"1",
         "foods": [
           {
-            "name": "皮蛋瘦肉粥",
+            "name": "皮蛋瘦肉粥-hot1",
             "price": 10,
             "id":"11",
             "oldPrice": "",
@@ -17,7 +17,7 @@
             "icon": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/114/h/114",
             "image": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/750/h/750"
           },{
-            "name": "皮蛋瘦肉粥",
+            "name": "皮蛋瘦肉粥-hot2",
             "price": 10,
             "id":"12",
             "oldPrice": "",
@@ -29,7 +29,7 @@
             "icon": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/114/h/114",
             "image": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/750/h/750"
           },{
-            "name": "皮蛋瘦肉粥",
+            "name": "皮蛋瘦肉粥-hot3",
             "price": 10,
             "id":"13",
             "oldPrice": "",
@@ -48,7 +48,7 @@
         "id":"2",
         "foods": [
           {
-            "name": "皮蛋瘦肉粥",
+            "name": "皮蛋瘦肉粥-discount1",
             "price": 10,
             "id":"21",
             "oldPrice": "",
@@ -60,7 +60,7 @@
             "icon": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/114/h/114",
             "image": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/750/h/750"
           },{
-            "name": "皮蛋瘦肉粥",
+            "name": "皮蛋瘦肉粥-discount2",
             "price": 10,
             "id":"22",
             "oldPrice": "",
@@ -72,7 +72,7 @@
             "icon": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/114/h/114",
             "image": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/750/h/750"
           },{
-            "name": "皮蛋瘦肉粥",
+            "name": "皮蛋瘦肉粥-discount3",
             "price": 10,
             "id":"23",
             "oldPrice": "",
@@ -91,7 +91,7 @@
         "id":"3",
         "foods": [
           {
-            "name": "皮蛋瘦肉粥",
+            "name": "皮蛋瘦肉粥-new1",
             "price": 10,
             "id":"31",
             "oldPrice": "",
@@ -103,7 +103,7 @@
             "icon": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/114/h/114",
             "image": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/750/h/750"
           },{
-            "name": "皮蛋瘦肉粥",
+            "name": "皮蛋瘦肉粥-new2",
             "price": 10,
             "id":"32",
             "oldPrice": "",
@@ -115,7 +115,7 @@
             "icon": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/114/h/114",
             "image": "http://fuss10.elemecdn.com/c/cd/c12745ed8a5171e13b427dbc39401jpeg.jpeg?imageView2/1/w/750/h/750"
           },{
-            "name": "皮蛋瘦肉粥",
+            "name": "皮蛋瘦肉粥-new3",
             "price": 10,
             "id":"33",
             "oldPrice": "",

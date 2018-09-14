@@ -1,7 +1,7 @@
 <template>
   <div class="wrap">
     <Header/>
-    <Main/>
+    <Main />
     <Footer/>
   </div>
 </template>
@@ -12,12 +12,19 @@ import Footer from "./components/Footer";
 
 export default {
   name: "app",
+  // data:()=>{
+  //   showFooter:''
+  // },
   components: {
     Header,
     Main,
     Footer
   },mounted(){
     this.$store.dispatch('getGoods')
+  },methods:{
+    changeFooter(str){
+        this.showFooter=str
+    }
   }
 };
 </script>

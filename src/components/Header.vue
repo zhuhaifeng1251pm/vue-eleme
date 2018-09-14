@@ -14,6 +14,8 @@
           <span>评价4.7</span>
           <span>月售433单</span>
           <span>蜂鸟专送约30分钟</span>
+                      
+
         </p>
       </div>
     </header>
@@ -48,7 +50,8 @@
             </li>
           </ul>
           <span style='margin-top:5vw'>公告</span>
-          <p>欢迎光临，用餐高峰期请提前下单，谢谢。</p>
+          <p>欢迎光临，用餐高峰期请提前下单，谢谢。
+          </p>
         </div>
         <u></u>
       </div>

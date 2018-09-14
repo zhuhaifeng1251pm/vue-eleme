@@ -17,6 +17,7 @@
     </div>
 </template>
 
+
 <style lang="scss" scoped>
 .main {
     height: 60%;
