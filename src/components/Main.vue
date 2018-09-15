@@ -20,7 +20,7 @@
 
 <style lang="scss" scoped>
 .main {
-    height: 60%;
+    height: 64%;
     width: 100vw;
   nav {
     width: 100vw;

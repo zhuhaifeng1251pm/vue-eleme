@@ -25,6 +25,7 @@
         <!-- <p>
             <span style="color: #333333;">满25减15元，满45减20元，满75减30元，满100减40元</span>
         </p> -->
+          <transition name="fade">
         <div class="show-buy-goods" v-if='show'>
             <!-- <p>已减0.9元</p> -->
             <div class="box1" v-show="goodsNum">
@@ -34,22 +35,24 @@
             <ul>
                 <li v-for=" food in this.$store.state.carts.carts" :key='food.id'>
                     <b>{{food.name}}</b>
-                    <span>{{food.price*$store.getters.showGoodsNum(food,food.id)}}</span>
-                    <div class="change-num">
-                        <img src="../assets/-.svg" alt="" @click="$store.commit('subCarts',food.id)">
-                        <span>{{$store.getters.showGoodsNum(food,food.id)}}</span>
-                        <img src="../assets/+.svg" alt="" @click="$store.commit('addCarts',food)">
-                    </div>
+                    <span>{{food.price*$store.getters.showGoodsNum(food.id)}}</span>
+                   <Cale :food='food'/>
                 </li>
             </ul>
 
         </div>
+          </transition>
+
     </footer>
 </template>
 <script>
+import Cale from './Cale'
 export default {
   name: "fooders",
   data: () => ({ show: false }),
+  components:{
+    Cale
+  },
   computed: {
     goodsNum() {
       return this.$store.state.carts.carts.length;
@@ -74,7 +77,7 @@ footer {
   width: 100%;
   flex-shrink: 0;
   height: 9%;
-  position: relative;
+  position: absolute;
   bottom: 0;
   z-index: 50;
   display: flex;
@@ -223,24 +226,6 @@ footer {
           overflow: hidden;
           text-overflow: ellipsis;
         }
-        .change-num {
-          display: flex;
-          justify-content: flex-end;
-          align-items: center;
-          width: 20vw;
-          margin-right: 1vw;
-
-          > img {
-            width: 5.866667vw;
-            height: 5.866667vw;
-            margin: 0;
-          }
-          > span {
-            text-align: center;
-            line-height: 5.866667vw;
-            margin: 0 3vw;
-          }
-        }
       }
     }
   }
@@ -265,5 +250,11 @@ footer {
   100% {
     transform: scale(1);
   }
+}
+.fade-enter-active, .fade-leave-active {
+transition: all 1s;
+}
+.fade-enter, .fade-leave-to  {
+  transform: translateY(100vh);
 }
 </style>

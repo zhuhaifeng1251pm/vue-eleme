@@ -29,9 +29,9 @@ const mutations = {
 
 const getters = {
   showGoodsNum(state) {
-    return function(Cart, id) {
+    return function( id) {
       const isInCart =
-        state.carts.findIndex(t => t.id === Cart.id) === -1 ? false : true;
+        state.carts.findIndex(t => t.id === id) === -1 ? false : true;
       if (isInCart) {
         return state.carts.find(t => t.id === id).count;
       }

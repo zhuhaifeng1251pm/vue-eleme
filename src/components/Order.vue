@@ -1,47 +1,136 @@
 <template>
+  <div class='order-wrap'>
     <div class="order">
-        <Menu :handleClick="handleClick" :activeTabType="activeTabType" />
-        <Foodlist ref='foodList' :activeTabType="activeTabType" :handleChangeNum='handleChangeNum' />
+      <Menu :handleClick="handleClick" :activeTabType="activeTabType" />
+      <Foodlist ref='foodList' :activeTabType="activeTabType" :handleChangeNum='handleChangeNum' :getFoodDetail='getFoodDetail' />
     </div>
+    <transition name="fades">
+      <div class="food-detail" v-if="showsFood">
+        <img :src="showsFood.image" alt="">
+        <div class="food-info">
+          <h3>{{showsFood.name}}</h3>
+          <p>月售{{showsFood.sellCount}}份 好评率{{showsFood.rating}}</p>
+          <div class="price">
+            <span v-if="$store.getters.showGoodsNum(showsFood.id)">￥{{showsFood.price*$store.getters.showGoodsNum(showsFood.id)}}</span>
+            <span v-else></span>
+            <Cale  :food='showsFood'/>
+          </div>
+        </div>
+        <div id="closess" @click='getFoodDetail(null)'></div>
+      </div>
+    </transition>
+    <Footer/>
+  </div>
 </template>
 <script>
+import Cale from './Cale';
 import Menu from "../components/Menu";
 import Foodlist from "../components/Foodlist";
 import axios from "axios";
+import Footer from "../components/Footer";
 export default {
-  name: "order",
-  components: {
-    Menu,
-    Foodlist
-  },
-  data: () => ({
-    activeTabType: 0
-  }),
-  methods: {
-    handleClick(str, num) {
-      // console.log(this.$refs.foodList)
-      this.activeTabType = num;
-      this.$refs.foodList.scroll.scrollToElement(
-        this.$refs.foodList.$refs[str][0],
-        700
-      );
+    name: "order",
+    components: {
+        Menu,
+        Foodlist,
+        Footer,Cale
     },
-    handleChangeNum(num) {
-      // console.log(num)
-      this.activeTabType = num;
+    data: () => ({
+        activeTabType: 0,
+        showsFood: null
+    }),
+    methods: {
+        handleClick(str, num) {
+            // console.log(this.$refs.foodList)
+            this.activeTabType = num;
+            this.$refs.foodList.scroll.scrollToElement(
+                this.$refs.foodList.$refs[str][0],
+                700
+            );
+        },
+        handleChangeNum(num) {
+            // console.log(num)
+            this.activeTabType = num;
+        },
+        getFoodDetail(food) {
+            this.showsFood = food;
+        }
     }
-  },
-  mounted() {
-    //    console.log(this.$store.state.goods.goods)
-  }
+
+    // mounted() {
+    //        console.log(this.showsFoo)
+    // }
 };
 </script>
 <style lang="scss" scoped>
-.order {
-  display: flex;
-  height: 100%;
-  // height: 100vw;
-  overflow: auto;
-  width: 100%;
+.order-wrap {
+    height: 100%;
+    // position: relative;
+    .order {
+        display: flex;
+        height: 100%;
+        // height: 100vw;
+        overflow: auto;
+        width: 100%;
+    }
+    .food-detail {
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 20;
+        display: flex;
+        flex-direction: column;
+        img {
+            width: 100%;
+        }
+        .food-info {
+            padding: 5vw;
+            h3 {
+                margin: 0;
+            }
+            p {
+                margin: 0;
+                font-size:10px;
+                color: #666;
+            }
+            .price{
+              width: 100%;
+              color: rgb(255, 83, 57);
+              font-size: 22px;
+              display: flex;
+              justify-content: space-between;
+              span{
+                width: 50vw;
+                height: 10vw;
+                line-height: 10vw;
+                background-color: #fff;
+              }
+            }
+
+           
+        }
+         #closess{
+              width: 10vw;
+              height: 10vw;
+              background-image: url('../assets/关闭.svg');
+              background-repeat: no-repeat;
+              background-size: contain;
+              position: absolute;
+              top: 0;
+              right: 0;
+              z-index: 60;
+            }
+    }
+}
+.fades-enter-active,
+.fades-leave-active {
+    transition: all 1s;
+}
+.fades-enter,
+.fades-leave-to {
+    transform: translateY(100vh);
 }
 </style>
