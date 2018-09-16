@@ -1,7 +1,7 @@
 <template>
   <div class='order-wrap'>
     <div class="order">
-      <Menu :handleClick="handleClick" :activeTabType="activeTabType" />
+      <Menu   ref='menu'    :handleClick="handleClick" :activeTabType="activeTabType" />
       <Foodlist ref='foodList' :activeTabType="activeTabType" :handleChangeNum='handleChangeNum' :getFoodDetail='getFoodDetail' />
     </div>
     <transition name="fades">
@@ -47,7 +47,8 @@ export default {
                 this.$refs.foodList.$refs[str][0],
                 700
             );
-        },
+        }
+       ,
         handleChangeNum(num) {
             // console.log(num)
             this.activeTabType = num;

@@ -6,7 +6,7 @@
             <!-- {{$store.state.carts.carts}} -->
             <div>
                 <span :style="`background-color:${!goodsNum?'rgba(61, 61, 63, 0.9)':'#00b3d4'}`" :class="{runner:totalNum}">
-                    <img src="../assets/shopingCart.svg" alt="" :style="`display:${goodsNum?'none':'flex'}`">
+                    <img src="../assets/shopingCart.svg" alt="" :style="`display:${goodsNum?'none':'flex'}`" @click="handleClicks" ref='img'>
                     <img src="../assets/shoppingCart2.svg" alt="" :style="`display:${goodsNum?'flex':'none'}`">
                 </span>
             </div>
@@ -67,6 +67,8 @@ export default {
   methods: {
     changeShow() {
       this.show = !this.show;
+    },handleClicks(){
+      console.log(this.$refs.img.offsetTop,this.$refs.img.offsetLeft)
     }
   }
 };
