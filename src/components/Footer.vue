@@ -5,12 +5,12 @@
             <span class="nums" v-show='totalNum'>{{totalNum}}</span>
             <!-- {{$store.state.carts.carts}} -->
             <div>
-                <span :style="`background-color:${!goodsNum?'rgba(61, 61, 63, 0.9)':'#00b3d4'}`" :class="{runner:totalNum}">
+                <span :style="`background-color:${!goodsNum?'rgba(61, 61, 63, 0.9)':'#00b3d4'}`" :class="{runner:isRun}">
                     <img src="../assets/shopingCart.svg" alt="" :style="`display:${goodsNum?'none':'flex'}`" @click="handleClicks" ref='img'>
                     <img src="../assets/shoppingCart2.svg" alt="" :style="`display:${goodsNum?'flex':'none'}`">
                 </span>
             </div>
-            <div class="total">
+            <div class="total" >
                 <p :class="{activecolor:totalPrice}">{{totalPrice?`￥${totalPrice}`:'未选购商品'}}</p>
                 <p>另需配送费3元</p>
                 <!-- <span style='color:#000'>{{$store.state.carts.carts}}</span> -->
@@ -36,7 +36,7 @@
                 <li v-for=" food in this.$store.state.carts.carts" :key='food.id'>
                     <b>{{food.name}}</b>
                     <span>{{food.price*$store.getters.showGoodsNum(food.id)}}</span>
-                   <Cale :food='food'/>
+                   <Cale :food='food' :changeisRun='changeisRun'/>
                 </li>
             </ul>
 
@@ -50,6 +50,7 @@ import Cale from './Cale'
 export default {
   name: "fooders",
   data: () => ({ show: false }),
+  props:['isRun','changeisRun'],
   components:{
     Cale
   },
@@ -70,11 +71,9 @@ export default {
     },handleClicks(){
       console.log(this.$refs.img.offsetTop,this.$refs.img.offsetLeft)
     }
-  },watch:{
-    num(){
-
-    }
+   
   }
+  
 };
 </script>
 
@@ -238,7 +237,7 @@ footer {
 }
 
 .runner {
-  animation: run 2s;
+  animation: run 0.5s;
 }
 @keyframes run {
   0% {

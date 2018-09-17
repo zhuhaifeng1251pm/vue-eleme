@@ -15,7 +15,7 @@
 
                         <div class="price">
                             <span>￥{{food.price.toFixed(2)}}</span>
-                            <Cale :food='food' />
+                            <Cale :food='food'  :changeisRun='changeisRun'/>
                         </div>
                     </div>
 
@@ -30,7 +30,7 @@ import Cale from "./Cale";
 import Bscroll from "better-scroll";
 export default {
   name: "foodlist",
-  props: ["handleChangeNum", "getFoodDetail"],
+  props: ["handleChangeNum", "getFoodDetail",'changeisRun','handleMenu'],
   components: {
     Cale
   },
@@ -49,9 +49,16 @@ export default {
       });
       this.scroll.on(
         "scroll",
-        pos => this.handleChangeNum(this.currentIndex(-pos.y))
+        pos =>{ this.handleChangeNum(this.currentIndex(-pos.y))
+
+            this.handleMenu(`menu${this.currentIndex(-pos.y)}`)
+        }
         // console.log(pos)
       );
+      // this.scroll.on(
+      //   'scroll',
+      //   pos=>this.handleMenu()
+      // )
     });
   },
   computed: {

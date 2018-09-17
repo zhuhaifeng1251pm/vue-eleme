@@ -1,21 +1,21 @@
 <template>
-    <div class="change-num">
-        <img src="../assets/-.svg" alt="" @click.stop="$store.commit('subCarts',food.id)" v-show="$store.getters.showGoodsNum(food.id)">
-        <span v-show="$store.getters.showGoodsNum(food.id)">{{$store.getters.showGoodsNum(food.id)}}</span>
-        <img src="../assets/+.svg" alt="" @click.stop="handleAddCarts(food)">
-        <b ref='b'></b>
-    </div>
+  <div class="change-num" >
+    <img src="../assets/-.svg" alt="" @click.stop="$store.commit('subCarts',food.id)" v-show="$store.getters.showGoodsNum(food.id)">
+    <span v-show="$store.getters.showGoodsNum(food.id)">{{$store.getters.showGoodsNum(food.id)}}</span>
+    <img src="../assets/+.svg" alt="" @click.stop="handleAddCarts(food);changeisRun()">
+    <!-- <b ref='b'></b> -->
+  </div>
 </template>
 <script>
 export default {
   name: "cale",
-  props: ["food"],
+  props: ["food",'changeisRun'],
   methods: {
     handleAddCarts(food) {
       this.$store.commit("addCarts", food);
-    // this.$refs.b.style.transform('translate(20px,20px)')
-    //   this.$refs.b.offset({top:'1',left:'1'})
-     console.log(this.$refs.b.offsetTop,this.$refs.b.offsetLeft)
+      // this.$refs.b.style.transform('translate(20px,20px)')
+      //   this.$refs.b.offset({top:'1',left:'1'})
+      // console.log(this.$refs.b.offsetTop, this.$refs.b.offsetLeft);
     }
   }
 };
@@ -46,7 +46,7 @@ export default {
     border-radius: 50%;
     position: absolute;
     z-index: -1;
-    right: 6.1vw;
+    right: 5.8vw;
   }
 }
 </style>

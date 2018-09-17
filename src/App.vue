@@ -19,10 +19,12 @@ export default {
     Header,
     Main
     
-  },mounted(){
+  }
+  ,mounted(){
     this.$store.dispatch('getGoods')
-    this.$store.dispatch("getContents");
-  },methods:{
+    // this.$store.dispatch("getContents");
+  }
+  ,methods:{
     changeFooter(str){
         this.showFooter=str
     }

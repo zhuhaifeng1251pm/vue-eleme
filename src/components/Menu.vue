@@ -39,12 +39,6 @@ export default {
         click: true
       });
     });
-    // this.$refs.menu.scroll.scrollToElement(
-    //   this.$refs[`menu${this.activeTabType}`][0],
-    //   700,
-    //   0,
-    //   true
-    // );
   }
 };
 </script>

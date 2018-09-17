@@ -52,9 +52,10 @@
 <script>
 export default {
   name: "evaluate",
-  // mounted() {
-  //   this.$store.dispatch("getContents");
-  // },
+  mounted() {
+    console.log(1)
+    this.$store.dispatch("getContents");
+  },
   computed:{
     getContens(){
     return this.$store.state.contents.contents?this.$store.state.contents.contents:''}
