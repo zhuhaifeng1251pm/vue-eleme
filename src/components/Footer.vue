@@ -30,7 +30,7 @@
             <!-- <p>已减0.9元</p> -->
             <div class="box1" v-show="goodsNum">
                 <b>已选商品</b>
-                <span @click="$store.commit('clearCarts')">清空</span>
+                <span @click="$store.commit('clearCarts');handleNoShow()">清空</span>
             </div>
             <ul>
                 <li v-for=" food in this.$store.state.carts.carts" :key='food.id'>
@@ -64,12 +64,17 @@ export default {
     totalPrice() {
       return this.$store.getters.totalObj.allPrice;
     }
+    
   },
   methods: {
     changeShow() {
-      this.show = !this.show;
+      if(this.$store.state.carts.carts.length){
+      this.show = !this.show;}
+      
     },handleClicks(){
       console.log(this.$refs.img.offsetTop,this.$refs.img.offsetLeft)
+    },handleNoShow(){
+      this.show=false
     }
    
   }
