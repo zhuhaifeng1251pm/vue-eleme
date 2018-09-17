@@ -33,7 +33,7 @@
       </nav>
       <p>只看内容的评价</p>
       <ul>
-        <li v-for=" content in $store.state.contents.contents" :key='content.id'>
+        <li v-for=" content in getContens" :key='content.id'>
           <div class="users">
             <div class="contenter">
               <img :src="content.avatar" alt="">
@@ -52,8 +52,12 @@
 <script>
 export default {
   name: "evaluate",
-  mounted() {
-    this.$store.dispatch("getContents");
+  // mounted() {
+  //   this.$store.dispatch("getContents");
+  // },
+  computed:{
+    getContens(){
+    return this.$store.state.contents.contents?this.$store.state.contents.contents:''}
   }
 };
 </script>

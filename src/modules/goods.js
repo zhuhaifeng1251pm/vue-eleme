@@ -10,8 +10,8 @@ const mutations = {
 }
 const actions = {
     getGoods({ commit }) {
-        axios.get('http://localhost:3008/goods').then(res => {
-            commit('getGoods',res.data)
+        axios.get('https://raw.githubusercontent.com/zhuhaifeng1251pm/vue-eleme/master/api/db.json').then(res => {
+            commit('getGoods',res.data.goods)
         })
     }
 }

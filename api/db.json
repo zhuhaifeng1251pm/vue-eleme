@@ -317,14 +317,14 @@
     }
   ],
   "ratings": [
-    {  "id":"123",
+    {  "id":"12311",
       "username": "3******c",
       "rateTime": 1469281964000,
       "rateType": 0,
       "text": "很喜欢的粥",
       "avatar": "http://static.galileo.xiaojukeji.com/static/tms/default_header.png"
     },
-    { "id":"456",
+    { "id":"45644",
       "username": "2******3",
       "rateTime": 1469271264000,
       "rateType": 0,
@@ -332,7 +332,7 @@
       "avatar": "http://static.galileo.xiaojukeji.com/static/tms/default_header.png"
     },
     {
-      "id":"789",
+      "id":"78977",
       "username": "3******b",
       "rateTime": 1469261964000,
       "rateType": 1,

@@ -21,6 +21,7 @@ export default {
     
   },mounted(){
     this.$store.dispatch('getGoods')
+    this.$store.dispatch("getContents");
   },methods:{
     changeFooter(str){
         this.showFooter=str

@@ -11,7 +11,7 @@
                 </span>
             </div>
             <div class="total">
-                <p :class="{activecolor:totalPrice}">{{totalPrice?`￥${totalPrice}`:'为选购商品'}}</p>
+                <p :class="{activecolor:totalPrice}">{{totalPrice?`￥${totalPrice}`:'未选购商品'}}</p>
                 <p>另需配送费3元</p>
                 <!-- <span style='color:#000'>{{$store.state.carts.carts}}</span> -->
             </div>
@@ -69,6 +69,10 @@ export default {
       this.show = !this.show;
     },handleClicks(){
       console.log(this.$refs.img.offsetTop,this.$refs.img.offsetLeft)
+    }
+  },watch:{
+    num(){
+
     }
   }
 };

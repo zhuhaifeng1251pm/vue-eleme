@@ -1,25 +1,28 @@
-import axios from 'axios'
+import axios from "axios";
 const state = {
-    contents:[]
-}
+  contents: []
+};
 const mutations = {
-    getContents(state,contents) {
-        state.contents.push(...contents)
-
-    }
-}
+  getContents(state, contents) {
+    state.contents.push(...contents);
+  }
+};
 const actions = {
-    getContents({commit}) {
-        const uri = 'http://localhost:3008/ratings'
-        axios.get(uri).then(res => {
-            commit('getContents',res.data)
-
-        }).catch(err=>{})
-    }
-
-}
+  getContents({ commit }) {
+    const uri =
+      "https://raw.githubusercontent.com/zhuhaifeng1251pm/vue-eleme/master/api/db.json";
+    axios
+      .get(uri)
+      .then(res => {
+        commit("getContents", res.data.ratings);
+      })
+      .catch(err => {});
+  }
+};
 
 const contents = {
-    state,mutations,actions
-}
-export default contents
+  state,
+  mutations,
+  actions
+};
+export default contents;
